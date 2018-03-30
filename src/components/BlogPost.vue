@@ -17,6 +17,12 @@
 
       <!-- <vue-picture-swipe :items="items"></vue-picture-swipe> -->
 
+<ul>
+  <li v-for="image in items">
+    <img :src="image.thumbnail" width="300" style="margin:10px; max-width: 300px; float: left;" />
+  </li>
+</ul>
+
       <footer class="post__footer">
        <!--  <vue-disqus v-if="commentsReady" shortname="vue-blog-demo"
           :key="post" :identifier="post" :url="`https://vue-blog-demo.netlify.com/read/${post}`"/> -->
@@ -27,14 +33,14 @@
 
 <script>
 // import VueDisqus from 'vue-disqus/VueDisqus'
-import VuePictureSwipe from 'vue-picture-swipe'
+// import VuePictureSwipe from 'vue-picture-swipe'
 import { kebabify, prettyDate } from '../helpers'
 
 export default {
   name: 'blog-post',
   resource: 'BlogPost',
   // components: { VueDisqus },
-  components: { VuePictureSwipe },
+  // components: { VuePictureSwipe },
   props: { post: String },
 
   data() {

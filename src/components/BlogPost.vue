@@ -15,7 +15,7 @@
 
       <section class="post__body rte" v-html="content"></section>
 
-      <vue-picture-swipe :items="items"></vue-picture-swipe>
+      <!-- <vue-picture-swipe :items="items"></vue-picture-swipe> -->
 
       <footer class="post__footer">
        <!--  <vue-disqus v-if="commentsReady" shortname="vue-blog-demo"

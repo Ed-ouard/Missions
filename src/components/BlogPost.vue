@@ -27,7 +27,7 @@
 
 <script>
 // import VueDisqus from 'vue-disqus/VueDisqus'
-import VuePictureSwipe from 'vue  -picture-swipe'
+import VuePictureSwipe from 'vue-picture-swipe'
 import { kebabify, prettyDate } from '../helpers'
 
 export default {

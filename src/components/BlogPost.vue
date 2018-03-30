@@ -34,7 +34,7 @@ export default {
   name: 'blog-post',
   resource: 'BlogPost',
   // components: { VueDisqus },
-  components: { VuePictureSwipe },
+  // components: { VuePictureSwipe },
   props: { post: String },
 
   data() {

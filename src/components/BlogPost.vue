@@ -15,7 +15,7 @@
 
       <section class="post__body rte" v-html="content"></section>
 
-      <!-- <vue-picture-swipe :items="items"></vue-picture-swipe> -->
+      <vue-picture-swipe :items="items"></vue-picture-swipe>
 
       <footer class="post__footer">
        <!--  <vue-disqus v-if="commentsReady" shortname="vue-blog-demo"
@@ -27,14 +27,14 @@
 
 <script>
 // import VueDisqus from 'vue-disqus/VueDisqus'
-// import VuePictureSwipe from 'vue-picture-swipe'
+import VuePictureSwipe from 'vue-picture-swipe'
 import { kebabify, prettyDate } from '../helpers'
 
 export default {
   name: 'blog-post',
   resource: 'BlogPost',
   // components: { VueDisqus },
-  // components: { VuePictureSwipe },
+  components: { VuePictureSwipe },
   props: { post: String },
 
   data() {

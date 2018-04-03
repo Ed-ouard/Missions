@@ -96,7 +96,7 @@
   }
 
   &__published::after {
-    content: 'by';
+    content: ' - Lieu : ';
     padding: 0 .25rem;
   }
 
@@ -106,4 +106,12 @@
     white-space: nowrap;
     font-size: .9rem;
   }
+}
+
+.preview__date {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,0.1);
 }

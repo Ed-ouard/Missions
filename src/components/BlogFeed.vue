@@ -4,6 +4,11 @@
       <figure class="preview__figure" :class="figureClass" :style="getBgImg(post.image)">
         <transition name="v--fade">
           <figcaption v-if="!reading || $device.phone" class="preview__details">
+
+            <div class="preview__date">
+                {{ post.date }}
+            </div>
+
             <router-link class="preview__title"
               :to="`/read/${post.id}`"
               @click.native="scrollTo(0, 220, scrollDelay)">
@@ -11,14 +16,10 @@
             </router-link>
 
             <div class="preview__meta">
-              <time class="preview__published">
-                {{ prettyDate(post.published) }}
-              </time>
-
-              <router-link class="preview__author"
-                :to="`/by/${kebabify(post.author)}`"
-                @click.native="scrollTo(0, 220, scrollDelay)">
-                {{ post.author }}
+              Lieu : <router-link class="preview__author"
+              :to="`/read/${post.id}`"
+              @click.native="scrollTo(0, 220, scrollDelay)">
+                {{ post.lieu }}
               </router-link>
             </div>
           </figcaption>

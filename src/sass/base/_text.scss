@@ -34,15 +34,16 @@
 
 %txt--preview {
   @extend %ff--500;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: capitalize;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 
   @media (--laptop) {
-    font-size: 2.7rem;
+    font-size: 1.7rem;
   }
 
   @media (--desktop) {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
   }
 }
 

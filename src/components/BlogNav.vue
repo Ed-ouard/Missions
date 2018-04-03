@@ -1,5 +1,6 @@
 <template>
   <nav class="nav">
+    <img src="http://www.ndml.fr/wp-content/uploads/cropped-logoyoutube-453x280.png" style="max-width: 5rem; float: left; min-width: 4rem; width: 12vw;" />
     <h1 class="nav__title">
       <router-link to="/">{{ content.title }}</router-link>
     </h1>

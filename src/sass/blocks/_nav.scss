@@ -2,11 +2,13 @@
   position: fixed;
   top: 0;
   left: 50%;
-  width: calc(100% - 2.5rem);
+  width: 100%;
+  // width: calc(100% - 2.5rem);
   max-width: 90rem;
   padding: 1.25rem .625rem .625rem;
   border-bottom: 1px solid cc(border);
-  background-color: cc(bg, .975);
+  background-color: white;
+  // background-color: cc(bg, .975);
   box-shadow: 0 -50vw 0 50vw cc(bg, .975);
   display: flex;
   justify-content: space-between;

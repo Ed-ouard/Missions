@@ -4,10 +4,10 @@
       <header class="post__header">
         <h2 class="post__title">{{ title }}</h2>
 
-        <h3 class="post__meta">par <router-link class="post__author"
-          :to="`/by/${kebabify(author)}`">{{ author }}</router-link>
+        <h3 class="post__meta">
+          Date : <time>{{ date }}</time>
           <span class="post__sep"></span>
-          <time>{{ prettyDate(published) }}</time>
+          Lieu : {{ lieu }}
         </h3>
 
         <blockquote class="post__subtitle">{{ description }}</blockquote>
@@ -48,6 +48,8 @@ export default {
       title: '',
       author: '',
       content: '',
+      date: '',
+      lieu: 'a',
       published: '',
       description: '',
       commentsReady: false,
